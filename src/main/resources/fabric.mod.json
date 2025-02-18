@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "fallen-london",
+	"version": "${version}",
+	"name": "Fallen London",
+	"description": "Based on Fallen London by Failbetter Games, click \"Website\" to play it for free!",
+	"authors": [
+		"Hannah~"
+	],
+	"contact": {
+		"homepage": "https://fallenlondon.com/",
+		"sources": ""
+	},
+	"license": "GNU GPL 3.0",
+	"icon": "assets/fallen-london/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.fallenlondon.hannah.FallenLondon"
+		],
+		"fabric-datagen": [
+			"com.fallenlondon.hannah.FallenLondonDataGenerator"
+		],
+		"client": [
+			"com.fallenlondon.hannah.FallenLondonClient"
+		]
+	},
+	"mixins": [
+		"fallen-london.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
